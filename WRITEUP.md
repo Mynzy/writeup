@@ -30,3 +30,10 @@ we need to checkout the previous commit
 
 and cat the message
 <img src="./pic/cat.png" alt="ngantuk">
+
+## 4. interencdec
+
+just decode cipher in base64 two times and rot13 with 19 rotation <code>YidkM0JxZGtwQlRYdHFhR3g2YUhsZmF6TnFlVGwzWVROclgyZzBOMm8yYXpZNWZRPT0nCg==</code>
+
+## 5. Time Machine
+download the challenge.zip, navigate to drop-in , cat the message and read the clue , enter <code>git log</code> to look into commit history

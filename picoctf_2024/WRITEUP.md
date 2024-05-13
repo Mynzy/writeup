@@ -51,3 +51,59 @@ With <code> git branch -a </code> you can see all branch. There are three featur
 
 <img src="./pic/collab2.png" alt="ngantuk">
 
+## 8. weirdSnake
+
+this is a re challenge. 
+![alt text](./pic/snake1.png)
+
+```py
+input_list = [4, 54, 41, 0, 112, 32, 25, 49, 33, 3, 0, 0, 57, 32, 108, 23, 48, 4, 9, 70, 7, 110, 36, 8, 108, 7, 49, 10, 4, 86, 43, 108, 112, 14, 2, 71, 62, 115, 88, 78]
+```
+
+
+![alt text](./pic/snake2.png)
+```py
+key_str = "J"
+key_str = "_" + key_str
+key_str = key_str + "o"
+key_str = key_str + "3"
+key_str = "t" + key_str
+
+```
+
+![alt text](./pic/snake3.png)
+```py
+key_list = [ord(char) for char in key_str]
+while len(key_list) < len(input_list):
+    key_list.extend(key_list)
+    print(key_list)
+
+```
+
+![alt text](./pic/snake4.png)
+```py
+result = [a^b for a,b in zip(input_list, key_list)]
+```
+
+![alt text](./pic/snake5.png)
+
+
+so the final code will be 
+
+```py
+input_list = [4, 54, 41, 0, 112, 32, 25, 49, 33, 3, 0, 0, 57, 32, 108, 23, 48, 4, 9, 70, 7, 110, 36, 8, 108, 7, 49, 10, 4, 86, 43, 108, 112, 14, 2, 71, 62, 115, 88, 78]
+key_str = "J"
+key_str = "_" + key_str
+key_str = key_str + "o"
+key_str = key_str + "3"
+key_str = "t" + key_str
+key_list = [ord(char) for char in key_str]
+while len(key_list) < len(input_list):
+    key_list.extend(key_list)
+    print(key_list)
+result = [a^b for a,b in zip(input_list, key_list)]
+result_text = ''.join(map(chr,result))
+print(result_text
+```
+
+can refer more [here](https://sudorem.dev/posts/pico24-weirdsnake/)

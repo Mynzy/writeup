@@ -265,3 +265,35 @@ donwload files and analyze image with any exif tools. the atrributeurl in base64
 [fadzw@hx8 ctf]$ echo cGljb0NURntNRTc0RDQ3QV9ISUREM05fZDhjMzgxZmR9Cg== | base64 -d
 picoCTF{ME74D47A_HIDD3N_d8c381fd}
 ```
+
+## 12. Binary Search
+
+Im actually dont know the exact method to solve this challenge, but here is how i solve it.<br>
+The challenge is named **Binary Search**, keep that in mind. <br>
+- As usual, launch the instance and enter the password. <br>
+- From that you will be greet with a question to guess the number between 1 to 1000 with only 10 guesses. <br>
+- If you apply binary seach in this challenge yourself, you might be able to solve it. <br>
+
+so here how i do it.. 
+
+**the first guess should always be 500.**
+
+- this is to split the guess into half. <br>
+- if it lower or higher, then you should always divde the remaining into half and see if it lower or higher. <br>
+- by using this method you might be able to solve it rather than simply guess the number. 
+
+congrats, you just did a **binary search** :p
+
+## 13. Unminify
+
+As the name suggest, you are required to inspect the website by launching instance.<br>
+and then, go to the **source** and **index**.<br>
+You can find the flag is hidden in the body part **between this line of code** ;
+
+```html
+  <p class="picoctf{}">If you're reading this, your browser has succesfully received the flag.</p>
+
+  this is where they hide the flag
+
+  <p class="picoctf{}">I just deliver flags, I don't know how to read them...</p>
+```

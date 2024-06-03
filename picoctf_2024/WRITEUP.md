@@ -297,3 +297,14 @@ You can find the flag is hidden in the body part **between this line of code** ;
 
   <p class="picoctf{}">I just deliver flags, I don't know how to read them...</p>
 ```
+
+## 14. Secret of Polyglot
+
+the challenge is quite simple, they ask you to examine the **type of the file** <br>
+so the first step to solve this is :
+- check the content given, which is the pdf file.
+- it give you the **2nd half of the flag**.
+- check the file type using <code>file flag2of2-final.pdf</code> command.
+- since the type of the file is png
+- rename it into png file using this command <code>mv flag2of2-final.pdf flag.png</code>
+- the png file will give you the **first half of the flag**
